@@ -1,0 +1,19 @@
+.form__input-radio_visible {
+  display: inline-block; 
+  vertical-align: middle;
+  width: 25px;
+  height: 25px;
+
+  margin-right: 14px;
+
+  cursor: pointer;
+
+  border: 2px solid #000;
+  border-radius: 50%;
+  background-color: #fff;
+  transition: .3s linear;
+}
+
+.form__input-radio:checked + span {
+  background-color: #000;
+}

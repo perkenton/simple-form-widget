@@ -1,0 +1,15 @@
+.form__link {
+  color: #000;
+  text-decoration: none;
+  border-bottom: 1px solid rgba(0, 0, 0, 1);
+  transition: .2s linear;
+}
+
+.form__link:hover {
+  color: rgba(0, 0, 0, .4);
+  border-bottom: 1px solid rgba(0, 0, 0, 0);
+}
+
+.form__link:focus {
+  outline: 1px dotted #000;
+}
