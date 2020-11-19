@@ -2,6 +2,7 @@
 @import url(../vendor/fonts.css);
 
 @import url(../blocks/form/form.css);
+@import url(../blocks/modal-window/modal-window.css);
 
 body {
   height: 100vh;

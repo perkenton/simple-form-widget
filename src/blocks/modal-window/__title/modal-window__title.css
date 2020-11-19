@@ -1,0 +1,11 @@
+.modal-window__title {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 24px;
+  text-align: center;
+  color: #F45A0F;
+
+  margin: 0;
+}

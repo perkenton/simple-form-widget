@@ -1,0 +1,26 @@
+@import url(./__close/modal-window__close.css);
+@import url(./__comment/modal-window__comment.css);
+@import url(./__comment-subtitle/modal-window__comment-subtitle.css);
+@import url(./__contact/modal-window__contact.css);
+@import url(./__content/modal-window__content.css);
+@import url(./__date/modal-window__date.css);
+@import url(./__text/modal-window__text.css);
+@import url(./__title/modal-window__title.css);
+@import url(./__title-line/modal-window__title-line.css);
+@import url(./_is-opened/modal-window_is-opened.css);
+
+.modal-window {
+  position: fixed;
+
+  width: 100%;
+  height: 100%;
+
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+
+  background-color: rgba(0, 0, 0, .6);
+
+  z-index: 9;
+}
