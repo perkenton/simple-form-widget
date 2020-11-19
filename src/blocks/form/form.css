@@ -1,26 +1,46 @@
-@import url('./__error/form__error.css');
-@import url('./__input/form__input.css');
-@import url('./__textarea/form__textarea.css');
-@import url('./__input-radio/form__input-radio.css');
-@import url('./__input-submit/form__input-submit.css');
-@import url('./__input-label/form__input-label.css');
-@import url('./__link/form__link.css');
-@import url('./__input-radio/_visible/form__input-radio_visible.css');
+@import url(./__calendar/form__calendar.css);
+@import url(./__contacts-person/form__contacts-person.css);
+@import url(./__input-submit/form__input-submit.css);
+@import url(./__input-text/form__input-text.css);
+@import url(./__subtitle-calendar/form__subtitle-calendar.css);
+@import url(./__subtitle-contacts-person/form__subtitle-contacts-person.css);
+@import url(./__subtitle-input-text/form__subtitle-input-text.css);
 
 .form {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: flex-start;   
-
+  max-width: 600px;
   width: 100%;
+  min-width: 200px;
 
-  padding: 61px 0;
+  display: grid;
+  grid-template-areas:
+    "form__subtitle-contacts-person form__subtitle-calendar"
+    "form__contacts-person form__calendar"
+    "form__subtitle-input-text form__subtitle-input-text"
+    "form__input-text form__input-text"
+    "form__input-submit form__input-submit";
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: min-content auto min-content auto 1fr;
+  grid-gap: 6px 12px;
+  align-items: center;
+
+  padding: 16px;
+
+  background-color: #f5f5f5;
+  border: 1px solid grey;
   box-sizing: border-box;
 }
 
-@media (max-width: 425px) {
+@media (max-width: 360px) {
   .form {
-    padding-top: 40px;
+    grid-template-areas:
+    "form__subtitle-contacts-person"
+    "form__contacts-person"
+    "form__subtitle-calendar"
+    "form__calendar"
+    "form__subtitle-input-text"
+    "form__input-text"
+    "form__input-submit";
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
   }
 }

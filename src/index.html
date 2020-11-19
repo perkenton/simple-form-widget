@@ -1,27 +1,32 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Турбина</title>
+  <title>form-widget</title>
   <link rel="stylesheet" href="<%=htmlWebpackPlugin.files.css %>">
   <script defer src="<%=htmlWebpackPlugin.files.js %>"></script>
 </head>
 <body>
 
-  <form action="" class="form">
-    <input type="text" class="form__input" placeholder="Имя и фамилия автора">
-    <span class="form__error">Какая-то ошибка*</span>
-    <input type="tel" class="form__input" placeholder="Телефон">
-    <input type="email" class="form__input" placeholder="Почта">
-    <textarea name="" id="" class="form__textarea" placeholder="Стихи"></textarea>
-    <label for="offer" class="form__input-label">
-      <input type="checkbox" id="offer" class="form__input-radio">
-      <span class="form__input-radio_visible"></span>
-      Согласен с <a href="#" class="form__link">офертой</a>
-    </label>
-    <button type="submit" class="form__input-submit">Отправить форму</button>
+  <form id="contacts" action="" class="form">
+
+    <p class="form__subtitle-contacts-person">Choose contact person*</p>
+    <select name="contacts-person" form="contacts" class="form__contacts-person">
+      <option>Charles Morris</option>
+      <option>Сыроежкин</option>
+      <option>Чижиков</option>
+      <option>Кукушкина</option>
+    </select>
+
+    <p class="form__subtitle-calendar">Choose date*</p>
+    <input type="date" name="calendar" value="" class="form__calendar" />
+
+    <p class="form__subtitle-input-text">Add comment</p>
+    <input type="text" name="text" placeholder="Some comment?" class="form__input-text" />
+
+    <input type="submit" value="Send" class="form__input-submit" />
   </form>
 
 </body>

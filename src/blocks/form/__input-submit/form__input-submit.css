@@ -1,64 +1,41 @@
 .form__input-submit {
-  max-width: 600px;
-  width: 100%;
-  min-height: 60px;
+  max-width: calc(100% - 16px);
 
   border-radius: 30px;
-  border: 2px solid #000;
+  border: 1px solid #0085E3;
 
-  margin: 39px 0 0;
+  margin: 39px auto 0;
+  padding: 8px 32px;
 
-  background-color: #fff;
+  background-color: rgba(3, 116, 161, .5);
 
-  font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, Helvetica, sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, Helvetica, sans-serif;
   font-style: normal;
-  font-weight: 400;
+  font-weight: 600;
   font-size: 16px;
   line-height: 20px;
   text-align: center;
-  color: #000;
+  text-transform: uppercase;
+  letter-spacing: .7px;
+  color: #fff;
 
+  grid-area: form__input-submit;
   cursor: pointer;
   transition: .3s linear;
 }
 
 .form__input-submit:hover {
-  background-color: #000;
-  color: #fff;
+  transform: scale(1.07);
+  background-color: rgba(3, 116, 161, .4);
 }
 
 .form__input-submit:focus {
   outline: none;
-  font-size: 18px;
+  transform: scale(1.07);
+  background-color: rgba(3, 116, 161, .4);
 }
 
 .form__input-submit:active {
-  font-size: 16px;
-}
-
-@media (max-width: 768px) {
-  .form__input-submit {
-    max-width: 648px;
-  }
-}
-
-@media (max-width: 425px) {
-  .form__input-submit {
-    min-height: 42px;
-    font-size: 12px;
-    line-height: 20px;
-  }
-
-  .form__input-submit:hover {
-    font-size: 14px;
-  }
-
-  .form__input-submit:focus {
-    outline: none;
-    font-size: 14px;
-  }
-
-  .form__input-submit:active {
-    font-size: 12px;
-  }
+  transform: scale(1);
+  background-color: rgba(3, 116, 161, .5);
 }
