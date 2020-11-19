@@ -14,6 +14,7 @@
 
     <p class="form__subtitle-contacts-person">Choose contact person*</p>
     <select name="contacts-person" form="contacts" class="form__contacts-person">
+      <option class="form__contacts-person-item">Person list</option>
     </select>
 
     <p class="form__subtitle-calendar">Choose date*</p>
@@ -22,7 +23,7 @@
     <p class="form__subtitle-input-text">Add comment</p>
     <input type="text" min="2" max="140" name="text" placeholder="Some comment?" class="form__input-text" />
 
-    <input type="submit" value="Send" class="form__input-submit" />
+    <input type="submit" value="Send" class="form__input-submit form__input-submit_is-inactive" />
 
     <div class="modal-window">
       <div class="modal-window__content">
@@ -32,12 +33,9 @@
           <span class="modal-window__title-line">Thanks!</span>
           <span class="modal-window__title-line">The application has been sent!</span>
         </h2>
-        <p class="modal-window__text"><span class="modal-window__contact">John</span> will call you <span class="modal-window__date">15.12.2020</span></p>
+        <p class="modal-window__text"><span class="modal-window__contact"></span> will call you <span class="modal-window__date"></span></p>
 
-        <div class="modal-window__comment-block">
-          <p class="modal-window__comment-subtitle">Your comment:</p>
-          <p class="modal-window__comment">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur, maxime nisi. Ab deserunt dolor maiores modi nesciunt possimus.</p>
-        </div>
+        <p class="modal-window__comment"></p>
 
       </div>
     </div>

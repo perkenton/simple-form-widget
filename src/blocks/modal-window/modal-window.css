@@ -1,6 +1,5 @@
 @import url(./__close/modal-window__close.css);
 @import url(./__comment/modal-window__comment.css);
-@import url(./__comment-subtitle/modal-window__comment-subtitle.css);
 @import url(./__contact/modal-window__contact.css);
 @import url(./__content/modal-window__content.css);
 @import url(./__date/modal-window__date.css);
@@ -20,7 +19,8 @@
   left: 0;
   right: 0;
 
-  background-color: rgba(0, 0, 0, .6);
-
+  background-color: rgba(0, 0, 0, .7);
   z-index: 9;
+
+  display: none;
 }

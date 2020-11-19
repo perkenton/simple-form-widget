@@ -19,8 +19,9 @@
 }
 
 .form__contacts-person:focus {
-  /*outline: 1px dotted #F45A0F;*/
   outline: none;
+  border: 1px solid #f45a0f;
+  box-shadow: inset 0 0 1px #f45a0f;
 }
 
 /*.form__contacts-person::after {*/

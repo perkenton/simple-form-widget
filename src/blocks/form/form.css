@@ -2,6 +2,7 @@
 @import url(./__contacts-person/form__contacts-person.css);
 @import url(./__contacts-person-item/form__contacts-person-item.css);
 @import url(./__input-submit/form__input-submit.css);
+@import url(./__input-submit/_is-inactive/form__input-submit_is-inactive.css);
 @import url(./__input-text/form__input-text.css);
 @import url(./__subtitle-calendar/form__subtitle-calendar.css);
 @import url(./__subtitle-contacts-person/form__subtitle-contacts-person.css);
