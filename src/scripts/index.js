@@ -8,6 +8,7 @@ import {
   COMMENT_INPUT,
   SUBMIT_INPUT,
   CONTACTS_FORM,
+  MODAL_WINDOW
 } from './constants.js';
 
 'use strict';
@@ -97,6 +98,14 @@ import {
 
   CONTACTS_FORM.addEventListener('change', handlerInputForm);
 
+  const closeModalWindow = () => {
+    PERSON_INPUT.value = 'Person list';
+    DATE_INPUT.value = '';
+    COMMENT_INPUT.value = '';
+    setSubmitButtonState(false);
+    MODAL_WINDOW.classList.remove('modal-window_is-opened');
+  }
+
   SUBMIT_INPUT.addEventListener('click', (event) => {
     event.preventDefault();
 
@@ -108,11 +117,13 @@ import {
   });
 
   document.querySelector('.modal-window__close').addEventListener('click', () => {
-    PERSON_INPUT.value = 'Person list';
-    DATE_INPUT.value = '';
-    COMMENT_INPUT.value = '';
-    setSubmitButtonState(false);
-    document.querySelector('.modal-window').classList.remove('modal-window_is-opened');
+    closeModalWindow();
+  });
+
+  MODAL_WINDOW.addEventListener('mousedown', () => {
+    if (MODAL_WINDOW.classList.contains('modal-window_is-opened')) {
+      closeModalWindow();
+    }
   });
 
 })();

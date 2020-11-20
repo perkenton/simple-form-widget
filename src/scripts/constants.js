@@ -7,6 +7,7 @@ export {
   COMMENT_INPUT,
   SUBMIT_INPUT,
   CONTACTS_FORM,
+  MODAL_WINDOW
 };
 
 const CONTACTS_API_URL = 'https://reqres.in/api/users?page=1';
@@ -18,3 +19,4 @@ const DATE_INPUT_SUBTITLE = document.querySelector('.form__subtitle-calendar');
 const COMMENT_INPUT = document.querySelector('.form__input-text');
 const SUBMIT_INPUT = document.querySelector('.form__input-submit');
 const CONTACTS_FORM = document.querySelector('.form');
+const MODAL_WINDOW = document.querySelector('.modal-window');
