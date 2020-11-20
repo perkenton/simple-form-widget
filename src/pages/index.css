@@ -3,9 +3,4 @@
 
 @import url(../blocks/form/form.css);
 @import url(../blocks/modal-window/modal-window.css);
-
-body {
-  height: 100vh;
-  display: grid;
-  place-items: center;
-}
+@import url(../blocks/root/root.css);
