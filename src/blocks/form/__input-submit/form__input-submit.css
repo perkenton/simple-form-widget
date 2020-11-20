@@ -7,7 +7,7 @@
   margin: 39px auto 0;
   padding: 8px 32px;
 
-  background-color: rgba(244, 90, 15, .7);
+  background-color: rgba(244, 90, 15, .8);
 
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, Helvetica, sans-serif;
   font-style: normal;
@@ -26,7 +26,7 @@
 
 .form__input-submit:hover, .form__input-submit:focus {
   transform: scale(1.07);
-  background-color: rgba(244, 90, 15, .8);
+  background-color: rgba(244, 90, 15, .9);
 }
 
 .form__input-submit:focus {
@@ -35,5 +35,5 @@
 
 .form__input-submit:active {
   transform: scale(1);
-  background-color: rgba(244, 90, 15, .7);
+  background-color: rgba(244, 90, 15, .9);
 }
