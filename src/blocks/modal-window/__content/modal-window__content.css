@@ -1,6 +1,6 @@
 .modal-window__content {
   max-width: 400px;
-  width: 100%;
+  width: calc(100% - 40px);
   min-width: 200px;
   min-height: 100px;
 
