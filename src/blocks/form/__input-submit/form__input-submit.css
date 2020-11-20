@@ -1,0 +1,39 @@
+.form__input-submit {
+  max-width: calc(100% - 16px);
+
+  border-radius: 30px;
+  border: 1px solid #f45a0f;
+
+  margin: 39px auto 0;
+  padding: 8px 32px;
+
+  background-color: rgba(244, 90, 15, .8);
+
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: .7px;
+  color: #fff;
+
+  grid-area: form__input-submit;
+  cursor: pointer;
+  transition: .3s linear;
+}
+
+.form__input-submit:hover, .form__input-submit:focus {
+  transform: scale(1.07);
+  background-color: rgba(244, 90, 15, .9);
+}
+
+.form__input-submit:focus {
+  outline: none;
+}
+
+.form__input-submit:active {
+  transform: scale(1);
+  background-color: rgba(244, 90, 15, .9);
+}

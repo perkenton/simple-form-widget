@@ -1,0 +1,13 @@
+.form__subtitle-contacts-person {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: #fff;
+
+  margin: 0;
+  padding-left: 6px;
+
+  grid-area: form__subtitle-contacts-person;
+}

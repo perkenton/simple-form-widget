@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>form-widget</title>
+  <link rel="stylesheet" href="<%=htmlWebpackPlugin.files.css %>">
+  <script defer src="<%=htmlWebpackPlugin.files.js %>"></script>
+</head>
+<body>
+
+  <div class="root">
+    <form id="contacts" class="form">
+
+      <label for="contacts-person" class="form__subtitle-contacts-person">Choose contact person*</label>
+      <select id="contacts-person" form="contacts" class="form__contacts-person">
+        <option class="form__contacts-person-item">Person list</option>
+      </select>
+
+      <label for="calendar" class="form__subtitle-calendar">Choose date*</label>
+      <input type="date" id="calendar" form="contacts" required class="form__calendar" />
+
+      <label for="text" class="form__subtitle-input-text">Add comment</label>
+      <input type="text" id="text" form="contacts" placeholder="Some comment?" class="form__input-text" />
+
+      <button type="submit" form="contacts" class="form__input-submit form__input-submit_is-disabled" disabled>Send</button>
+
+
+      <div class="modal-window">
+        <div class="modal-window__content">
+
+          <img src="<%=require('./images/close.svg').default%>" alt="Close" class="modal-window__close">
+          <h2 class="modal-window__title">
+            <span class="modal-window__title-line">Thanks!</span>
+            <span class="modal-window__title-line">Your request has been sent!</span>
+          </h2>
+          <p class="modal-window__text"><span class="modal-window__contact"></span> will call you <span class="modal-window__date"></span></p>
+
+          <p class="modal-window__comment"></p>
+
+        </div>
+      </div>
+
+    </form>
+  </div>
+
+</body>
+</html>
