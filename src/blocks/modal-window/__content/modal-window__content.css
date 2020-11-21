@@ -6,6 +6,7 @@
 
   padding: 16px 16px 18px 16px;
   background-color: #fff;
+  box-shadow: 0 0 10px rgba(0,0,0,.5);
 
   position: absolute;
   top: 50%;
