@@ -34,7 +34,7 @@
   box-sizing: border-box;
 }
 
-@media (max-width: 360px) {
+@media (max-width: 425px) {
   .form {
     grid-template-areas:
     "form__subtitle-contacts-person"
